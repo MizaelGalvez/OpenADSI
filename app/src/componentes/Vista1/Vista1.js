@@ -1,64 +1,108 @@
 import React, { Component } from 'react';
-import Chart from 'chart.js';
-var myChart = new Chart("myChart", {
-  type: 'bar',
-  data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
+import './estilos.css';
+import {Doughnut} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
+
+const dataDona = {
+	labels: [
+		'Gastos',
+		'Nomina',
+		'Utilidad'
+	],
+	datasets: [{
+		data: [2000, 6000, 7000],
+    borderWidth: 8,
+		backgroundColor: [
+		'#a70954dd',
+		'#00ffffdd',
+		'#74b90add'
+		],
+		hoverBackgroundColor: [
+		'#a70954ff',
+		'#00ffffff',
+		'#74b90aff'
+		]
+	}]
+};
+
+
+
+
+const dataUtilidad = {
+  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+  datasets: [{
+      label: 'Proyeccion',
+      type:'line',
+      data: [1600, 3000, 4600, 8400, 12000, 18000, 23000],
+      fill: false,
+      borderWidth: 5,
+      borderColor: '#999999ee',
+      backgroundColor: '#999999ee',
+      pointBorderColor: '#999999ee',
+      pointBackgroundColor: '#999999ff',
+      pointHoverBackgroundColor: '#999999ff',
+      pointHoverBorderColor: '#999999ff',
+    },{
+      type: 'bar',
+      label: 'Utilidad',
+      data: [1600, 3000, 4600, 8400, 12000, 18000],
+      fill: false,
+      backgroundColor: '#74b90aee',
+      borderColor: '#74b90aff',
+      hoverBackgroundColor: '#74b90aff',
+      hoverBorderColor: '#74b90aff',
     }]
+};
+
+const options = {
+  gridLines: {
+                offsetGridLines: true
+            },
+  legend: {
+    display: false,
   },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero:true
-        }
-      }]
+  elements: {
+    line: {
+      fill: false
     }
-  }
-});
-
-
-
+  },
+};
 
 class Vista1 extends Component {
+
   render() {
     return (
+      <div>
 
-      <div className='Vista1' style={styles.navegacion}>
-          <div>
-          <canvas id="myChart" width="400" height="400"></canvas>
+        <div className='Vista1'>
+          <div className='Dona'>
+            <Doughnut
+              data={dataDona}
+              options={options}
+            />
           </div>
+          <div className='Proyeccion'>
+             <Bar
+              data={dataUtilidad}
+              options={options}
+            />
+          </div>
+        </div>
+        <div className='Datos'>
+          <div className='Efectivos'>
+            <b className='Gastos'>2000</b><p>Gastos</p><br/>
+            <b className='Nomina'>6000</b><p>Nomina</p><br/>
+            <b className='Utilidad'>7000</b><p>Utilidad</p><br/>
+          </div>
+          <div className='Descripcion'>
+              <p>Describcion Breve de cada Flujo</p>
+          </div>
+        </div>
+
+
       </div>
-
-
     )
   }
 }
 
-const styles = {
-  navegacion: {
-    fontSize: 14,
-  },
-
-}
 export default Vista1;

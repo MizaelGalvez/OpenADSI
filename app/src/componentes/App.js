@@ -27,7 +27,7 @@ class App extends Component {
   cambiarVista1 = (event) => {
     Contenido = Vista1;
     this.setState({
-      Titulo: 'Primer Vista',
+      Titulo: 'Proyeccion y Flujo de Efectivo',
     })
   }
   cambiarVista2 = (event) => {
