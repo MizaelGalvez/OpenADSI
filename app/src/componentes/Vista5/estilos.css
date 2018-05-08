@@ -1,0 +1,62 @@
+/*
+//////////Graficas//////////////////////////////////////////////////////////////////////
+*/
+
+.Vista5 {
+  margin-top: 40px;
+}
+
+/*
+//////////Datos y Descripcion//////////////////////////////////////////////////////////////////////
+*/
+.formularioAgregar {
+  display: Flex;
+  margin-left: 15%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+  justify-content: space-around;
+}
+.Agregar p {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #d5f6ffff;
+  padding: 5px;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+.boton {
+  margin: 10px;
+}
+.boton:hover {
+  margin: 10px;
+  background-color: #74b90add;
+}
+.Agregar b {
+  display: inline-block;
+  padding: 10px;
+  width: 130px;
+  border-radius: 5px;
+  margin: 5px;
+  margin-right: 0px;
+}
+.verde {
+  background-color: #74b90add;
+}
+.Emp {
+  background-color: #a70954dd;
+  color: #d5f6ffff;
+}
+.Adm {
+  background-color: #46ede1ff;
+}
+
+.Descripcion {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #d5f6ffff;
+    height: 100px;
+    width: 44%;
+}

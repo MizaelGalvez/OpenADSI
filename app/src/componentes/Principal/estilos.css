@@ -1,0 +1,30 @@
+/*
+//////////Titulo//////////////////////////////////////////////////////////////////////
+*/
+h4 {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 30px;
+  color: #d5f6ffff;
+}
+/*
+//////////Formulario//////////////////////////////////////////////////////////////////////
+*/
+.formulario-DIV {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.formulario input {
+  display: inline-block;
+  margin: 5px;
+}
+/*
+//////////Muestra//////////////////////////////////////////////////////////////////////
+*/
+.Principal img {
+  width: 20%;
+  margin: 15px;
+  box-shadow: 10px 10px 10px #00000099;
+  border-radius: 10px;
+}

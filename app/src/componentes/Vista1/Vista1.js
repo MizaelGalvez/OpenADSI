@@ -33,7 +33,7 @@ const dataUtilidad = {
   datasets: [{
       label: 'Proyeccion',
       type:'line',
-      data: [1600, 3000, 4600, 8400, 12000, 18000, 23000],
+      data: [1600, 2000, 3600, 4400, 5000, 6000, 6800, 7300, 8465],
       fill: false,
       borderWidth: 5,
       borderColor: '#999999ee',
@@ -45,12 +45,21 @@ const dataUtilidad = {
     },{
       type: 'bar',
       label: 'Utilidad',
-      data: [1600, 3000, 4600, 8400, 12000, 18000],
+      data: [1600, 2000, 3600, 4400, 5000, 6000],
       fill: false,
       backgroundColor: '#74b90aee',
       borderColor: '#74b90aff',
       hoverBackgroundColor: '#74b90aff',
       hoverBorderColor: '#74b90aff',
+    },{
+      type: 'bar',
+      label: 'Comparacion',
+      data: [175, 200, 352, 543, 684, 784, 978, 968, 1134, 1354, 1454, 1598],
+      fill: false,
+      backgroundColor: '#ff760eee',
+      borderColor: '#ff760eee',
+      hoverBackgroundColor: '#ff760eff',
+      hoverBorderColor: '#ff760eff',
     }]
 };
 
@@ -95,7 +104,7 @@ class Vista1 extends Component {
             <b className='Utilidad'>7000</b><p>Utilidad</p><br/>
           </div>
           <div className='Descripcion'>
-              <p>Describcion Breve de cada Flujo</p>
+              <p>Descripcion Breve de cada Flujo</p>
           </div>
         </div>
 

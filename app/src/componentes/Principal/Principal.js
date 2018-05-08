@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-
+import './estilos.css';
+import img1 from './src/Imagen1.PNG';
+import img2 from './src/Imagen2.PNG';
+import img3 from './src/Imagen3.PNG';
 
 
 class Principal extends Component {
@@ -7,17 +10,21 @@ class Principal extends Component {
     return (
 
       <div className='Principal' style={styles.navegacion}>
-          <h4>Que es OpenADSI? es la herramienta perfecta para hacer crecer tu startup !!, toma deciciones, midiendo tus metricas favoritas</h4>
+          <h4>Que es OpenADSI? es la herramienta perfecta para hacer crecer tu startup !!<br/>
+          Toma decisiones, midiendo tus metricas favoritas</h4>
           <div className="formulario-DIV">
             <form className="formulario">
-              <div className="formulario-datos">
                 <input type="text" required placeholder="Usuario"/>
                 <input type="password" required placeholder="password"/>
-                <input type="submit" value="Enviar"/>
-              </div>
+                <input type="submit" value="Iniciar Sesion"/>
+              <h4>Inicia Sesion para Continuar</h4>
             </form>
-            <h4>Inicia Sesion para Continuar</h4>
           </div>
+
+          <img src={img1} alt="img"/>
+          <img src={img2} alt="img"/>
+          <img src={img3} alt="img"/>
+
       </div>
 
 
