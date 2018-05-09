@@ -60,13 +60,70 @@
   margin: 5px;
   border-radius: 5px;
   background-color:#ff760e;
-  padding: 20px;
   cursor: pointer;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+.botonNav-end {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  background-color:#ff760e;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
 }
 .botonNav:hover {
   //animation: App-logo-spin infinite 20s linear;
   background-color:#dd0c6f;
 }
+/*
+////////////////////////Botones de navegacion/////////////////////////////////////////////////////////////////////////////
+*/
+.nav {
+  padding: 10px;
+  //position:absolute;
+  //left:0;
+  //bottom:0;
+  //right:0;
+}
+.botonNav {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5%;
+  border-radius: 5px;
+  //background-color:#ff9900;
+  cursor: pointer;
+}
+.botonNav-end {
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  //background-color:#ff9900;
+  cursor: pointer;
+}
+
+i {
+  font-size: 40px;
+  //transition-duration:  0.5s;
+  //transform: translateY(0px);
+}
+i:hover {
+  //transition-duration:  0.5s;
+  //transform: translateY(-10px);
+}
+
+.botonNav:hover {
+}
+/*
+///////////Estilos del COntenido Principal//////////////////////////////////////////////////////////////////////////////////////////
+*/
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
