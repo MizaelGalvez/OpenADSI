@@ -34,13 +34,13 @@ class App extends Component {
   cambiarVista2 = (event) => {
     Contenido = Vista2;
     this.setState({
-      Titulo: 'Desgloce y Captura de Numeros',
+      Titulo: 'Desgloce y Captura de Gastos e Ingresos',
     })
   }
   cambiarVista3 = (event) => {
     Contenido = Vista3;
     this.setState({
-      Titulo: 'Tercer Vista',
+      Titulo: 'Administracion de Empleados',
     })
   }
   cambiarVista4 = (event) => {
@@ -68,12 +68,12 @@ class App extends Component {
           {<Contenido/>}
           </div>
           <footer className="nav">
-            <p className="botonNav" onClick={this.cambiarPrincipal}>Principal</p>
-            <p className="botonNav" onClick={this.cambiarVista1}>Vista 1</p>
-            <p className="botonNav" onClick={this.cambiarVista2}>Vista 2</p>
-            <p className="botonNav" onClick={this.cambiarVista5}>Vista 5</p>
-            <p className="botonNav" onClick={this.cambiarVista3}>Vista 3</p>
-            <p className="botonNav" onClick={this.cambiarVista4}>Vista 4</p>
+            <p className="botonNav" onClick={this.cambiarPrincipal}><i class="fas fa-home"></i><p>TECNOTIV</p></p>
+            <p className="botonNav" onClick={this.cambiarVista1}><i class="far fa-money-bill-alt"></i><p>Flujos</p></p>
+            <p className="botonNav" onClick={this.cambiarVista2}><i class="fas fa-chart-bar"></i><p>Desgloce</p></p>
+            <p className="botonNav" onClick={this.cambiarVista5}><i class="far fa-address-card"></i><p>Agregar</p></p>
+            <p className="botonNav" onClick={this.cambiarVista3}><i class="far fa-calendar-alt"></i><p>Asistencias</p></p>
+            <p className="botonNav-end" onClick={this.cambiarVista4}><i class="far fa-hand-point-up"></i><p>Checador</p></p>
           </footer>
       </div>
 

@@ -11,12 +11,11 @@ class Vista3 extends Component {
       <div className='centrar' style={styles.navegacion}>
           <div className="izquierda">
             <ul>
-              <li className="listas">lorem ipsum 1</li>
-              <li className="listas">lorem ipsum 2</li>
-              <li className="listas">lorem ipsum 3</li>
+              <li className="listas">Gonzales Munguia Jose Antonio</li>
+              <li className="listas">Galvez Alcaraz Alejando MIzael</li>
             </ul>
-            <button type="button" className="boton_listas">boton1</button>
-            <button type="button" className="boton_listas2">boton2</button>
+            <button type="button" className="boton_listas">Imprimir</button>
+            <button type="button" className="boton_listas2">Pagar</button>
           </div>
           <div className="derecha">
             <div className="foto"></div>
