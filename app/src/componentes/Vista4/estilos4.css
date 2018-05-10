@@ -1,0 +1,42 @@
+.reloj{
+	font-size: 120px;
+	color: #fff;
+	background-color: #FF8000;
+	width: 300;
+	height: 500;
+}
+.conten{
+	margin-top: 10px;
+}
+.relleno{
+	background-color: #58FA58;
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+	padding: 30px;
+}
+.pic{
+	position: relative;
+	float: left;
+	margin-top:40px;
+	background-color: #BDBDBD;
+	width: 150px;
+	height: 200px;
+	position: relative;
+	left: 20%;
+}
+.data{
+	position: relative;
+	float: right;
+	right: 400px;
+	top: 100px;
+	background-color: #fff;
+	width: 400px;
+}
+.comp{
+	position: relative;
+	float: right;
+	top: 150px;
+	background-color: #fff;
+	width: 400px;
+}
