@@ -22,10 +22,4 @@ class Vista4 extends Component {
   }
 }
 
-const styles = {
-  navegacion: {
-    fontSize: 14,
-  },
-
-}
 export default Vista4;

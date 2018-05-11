@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './estilos.css';
-import {Doughnut} from 'react-chartjs-2';
-import {Bar} from 'react-chartjs-2';
 
 
 class Vista5 extends Component {
