@@ -1,0 +1,39 @@
+.Vista4 {
+ display: inline-block;
+ flex-direction: row;
+ justify-content: center;
+}
+.Vista4 img {
+	width: 100%;
+	height: 100%;
+}
+.reloj {
+	display: Flex;
+	align-items: center;
+	border-radius: 30px;
+}
+.informacion {
+	display: Flex;
+	align-items: center;
+}
+.ImagenReloj {
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+}
+.ImagenStatus {
+	width: 80px;
+	height: 120px;
+	background-color: #00ff00ff;
+	margin: 10px;
+}
+.ImagenFoto {
+	height: 200px;
+	width: 130px;
+	margin: 10px;
+}
+.ImagenDedo {
+	height: 100px;
+	width: 60px;
+	margin: 10px;
+}
