@@ -1,14 +1,22 @@
+Body {
+
+}
+
 .App {
   text-align: center;
 }
+
+/*
+//////////////////////// Cabecera /////////////////////////////////////////////////////////////////////////////
+*/
 
 .App-logo {
   position: absolute;
   left: 0;
   top: 0;
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-  margin: 5px;
+  height: 60px;
+  margin: 15px;
 }
 
 .iniciarSesion {
@@ -17,114 +25,90 @@
   font-weight: bold;
   position: absolute;
   right: 0;
-  top: 0;
+  background-color: #ff793f;
   margin: 10px;
-  background-color: #dd0c6f;
   border-radius: 5px;
   padding: 5px;
   color: white;
 }
 .iniciarSesion:hover {
-  background-color: #ffffff;
-  color: #dd0c6f;
+  background-color: #dd0c6f;
 }
 
 .App-header {
-  background-color: #46ede1;
-  height: 55px;
-  padding: 20px;
+  background-color: #34ace0;
+  padding: 5px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
-  color: #034641;
+  font-size: 1.1em;
+  color: #E1F5FE;
 }
 
-.App-intro {
-  font-size: large;
-}
+/*
+////////////////////////Botones de navegacion/////////////////////////////////////////////////////////////////////////////
+*/
 
 .nav {
-  background-color: #46ede1;
-  padding: 10px;
+  background-color: #34ace0;
+  color: #E1F5FE;
+  padding-bottom: 5px;
   position:absolute;
   left:0;
   bottom:0;
   right:0;
 }
 .botonNav {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   display: inline-block;
   margin: 5px;
+  margin-right: 5%;
   border-radius: 5px;
-  background-color:#ff760e;
+  background-color:#34ace0;
   cursor: pointer;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 0px;
+  transition-duration:  0.5s;
+  transform: translateY(0px);
 }
 .botonNav-end {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   display: inline-block;
   margin: 5px;
   border-radius: 5px;
-  background-color:#ff760e;
+  background-color:#34ace0;
   cursor: pointer;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 0px;
+  transition-duration:  0.5s;
+  transform: translateY(0px);
 }
 .botonNav:hover {
   //animation: App-logo-spin infinite 20s linear;
-  background-color:#dd0c6f;
+  background-color:#34ace0;
+  color: #E1F5FE;
+  transition-duration:  0.9s;
+  transform: translateY(-37px);
 }
 .botonNav-end:hover {
   //animation: App-logo-spin infinite 20s linear;
-  background-color:#dd0c6f;
-}
-/*
-////////////////////////Botones de navegacion/////////////////////////////////////////////////////////////////////////////
-*/
-.nav {
-  padding: 10px;
-  //position:absolute;
-  //left:0;
-  //bottom:0;
-  //right:0;
-}
-.botonNav {
-  display: inline-block;
-  font-size: 12px;
-  margin-right: 5%;
-  border-radius: 5px;
-  //background-color:#ff9900;
-  cursor: pointer;
-}
-.botonNav-end {
-  display: inline-block;
-  font-size: 12px;
-  border-radius: 5px;
-  //background-color:#ff9900;
-  cursor: pointer;
+  background-color:#34ace0;
+  color: #E1F5FE;
+  transition-duration:  0.9s;
+  transform: translateY(-37px);
 }
 
 i {
-  font-size: 40px;
-  //transition-duration:  0.5s;
-  //transform: translateY(0px);
-}
-i:hover {
-  //transition-duration:  0.5s;
-  //transform: translateY(-10px);
+  font-size: 30px;
 }
 
-.botonNav:hover {
-}
 /*
 ///////////Estilos del COntenido Principal//////////////////////////////////////////////////////////////////////////////////////////
 */

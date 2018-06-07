@@ -9,9 +9,6 @@
   padding: 30px;
   padding-bottom: 15px;
 }
-.Proyeccion {
-  background-color: #d5f6ffff;
-}
 /*
 //////////Datos y Descripcion//////////////////////////////////////////////////////////////////////
 */
@@ -19,7 +16,7 @@
 }
 .Capturar p {
   cursor: pointer;
-  background-color: #d5f6ffff;
+  background-color:  #B3E5FCaa;
   padding: 5px;
   padding-right: 10px;
   padding-left: 10px;
@@ -49,7 +46,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background-color: #d5f6ffff;
+  background-color:  #B3E5FCaa;
   margin: 20px;
   padding-right: 15%;
 }

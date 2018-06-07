@@ -13,7 +13,7 @@
 .Dona {
 }
 .Proyeccion {
-  background-color: #d5f6ffff;
+  background-color: #B3E5FCaa;
 }
 
 /*
@@ -27,7 +27,7 @@
 }
 .Efectivos p {
   display: inline-block;
-  background-color: #d5f6ffff;
+  background-color: #B3E5FCaa;
   padding: 5px;
   padding-right: 50px;
   padding-left: 10px;
@@ -40,14 +40,14 @@
   margin-right: 0px;
 }
 .Gastos {
-  background-color: #a70954dd;
+  background-color:  #B3E5FCaa;
   color: #d5f6ffff;
 }
 .Nomina {
-  background-color: #00ffffdd;
+  background-color:  #B3E5FCaa;
 }
 .Utilidad {
-  background-color: #74b90add;
+  background-color:  #B3E5FCaa;
 }
 
 .Descripcion {
@@ -55,7 +55,7 @@
     align-items: center;
     border-radius: 10px;
     padding: 20px;
-    background-color: #d5f6ffff;
+    background-color:  #B3E5FCaa;
     height: 100px;
     width: 44%;
 }

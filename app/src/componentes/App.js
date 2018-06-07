@@ -46,7 +46,7 @@ class App extends Component {
   cambiarVista4 = (event) => {
     Contenido = Vista4;
     this.setState({
-      Titulo: 'Checador',
+      Titulo: 'Cuarta Vista',
     })
   }
   cambiarVista5 = (event) => {
@@ -68,7 +68,7 @@ class App extends Component {
           {<Contenido/>}
           </div>
           <footer className="nav">
-            <p className="botonNav" onClick={this.cambiarPrincipal}><i class="fas fa-home"></i><p>TECNOTIV</p></p>
+            <p className="botonNav" onClick={this.cambiarPrincipal}><i class="fas fa-home"></i><p>Mi Startup</p></p>
             <p className="botonNav" onClick={this.cambiarVista1}><i class="far fa-money-bill-alt"></i><p>Flujos</p></p>
             <p className="botonNav" onClick={this.cambiarVista2}><i class="fas fa-chart-bar"></i><p>Desgloce</p></p>
             <p className="botonNav" onClick={this.cambiarVista5}><i class="far fa-address-card"></i><p>Agregar</p></p>
