@@ -3,32 +3,71 @@ import './estilos.css';
 import {Doughnut} from 'react-chartjs-2';
 import {Bar} from 'react-chartjs-2';
 
-const dataDona = {
-	labels: [
-		'Gastos',
-		'Nomina',
-		'Utilidad'
-	],
-	datasets: [{
-		data: [2000, 6000, 7000],
-    borderWidth: 8,
-		backgroundColor: [
-		'#a70954dd',
-		'#00ffffdd',
-		'#74b90add'
-		],
-		hoverBackgroundColor: [
-		'#a70954ff',
-		'#00ffffff',
-		'#74b90aff'
-		]
-	}]
+const DataNewUsers = {
+  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+  datasets: [{
+      label: 'Proyeccion',
+      type:'line',
+      data: [15, 25, 29, 34, 40, 42, 46, 60, 80, 80, 95],
+      fill: false,
+      borderWidth: 5,
+      borderColor: '#ff760eee',
+      backgroundColor: '#ff760eee',
+      pointBorderColor: '#ff760eee',
+      pointBackgroundColor: '#ff760eee',
+      pointHoverBackgroundColor: '#ff760eee',
+      pointHoverBorderColor: '#ff760eee',
+    }]
 };
 
+const DataUsersLost = {
+  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+  datasets: [{
+      label: 'Proyeccion',
+      type:'line',
+      data: [-2, -5, -7, -8, -6, -7, -10, -11, -9, -13, -15],
+      fill: false,
+      borderWidth: 5,
+      borderColor: '#dd0c6fee',
+      backgroundColor: '#dd0c6fee',
+      pointBorderColor: '#dd0c6fee',
+      pointBackgroundColor: '#dd0c6fee',
+      pointHoverBackgroundColor: '#dd0c6fee',
+      pointHoverBorderColor: '#dd0c6fee',
+    }]
+};
+const DataActiveUsers = {
+  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+  datasets: [{
+      label: 'Proyeccion',
+      type:'line',
+      data: [1600, 2000, 3600, 4400, 5000, 6000, 6800, 7300, 8465],
+      fill: false,
+      borderWidth: 5,
+      borderColor: '#74b90aee',
+      backgroundColor: '#74b90aee',
+      pointBorderColor: '#74b90aee',
+      pointBackgroundColor: '#74b90aee',
+      pointHoverBackgroundColor: '#74b90aee',
+      pointHoverBorderColor: '#74b90aee',
+    }]
+};
 
+const options = {
+  gridLines: {
+                offsetGridLines: true
+            },
+  legend: {
+    display: false,
+  },
+  elements: {
+    line: {
+      fill: false
+    }
+  },
+};
 
-
-const dataUtilidad = {
+const Multiple = {
   labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
   datasets: [{
       label: 'Proyeccion',
@@ -63,19 +102,6 @@ const dataUtilidad = {
     }]
 };
 
-const options = {
-  gridLines: {
-                offsetGridLines: true
-            },
-  legend: {
-    display: false,
-  },
-  elements: {
-    line: {
-      fill: false
-    }
-  },
-};
 
 class Vista1 extends Component {
 
@@ -84,28 +110,35 @@ class Vista1 extends Component {
       <div>
 
         <div className='Vista1'>
-          <div className='Dona'>
-            <Doughnut
-              data={dataDona}
-              options={options}
-            />
-          </div>
+
           <div className='Proyeccion'>
              <Bar
-              data={dataUtilidad}
+              data={DataNewUsers}
               options={options}
             />
           </div>
-        </div>
-        <div className='Datos'>
-          <div className='Efectivos'>
-            <b className='Gastos'>2000</b><p>Gastos</p><br/>
-            <b className='Nomina'>6000</b><p>Nomina</p><br/>
-            <b className='Utilidad'>7000</b><p>Utilidad</p><br/>
+					<div className='Proyeccion'>
+
+					<div className='Datos'>
+							<b className='Gastos'>2000</b><p>Gastos</p><br/>
+							<b className='Nomina'>6000</b><p>Nomina</p><br/>
+							<b className='Utilidad'>7000</b><p>Utilidad</p><br/>
+
+					</div>
+
           </div>
-          <div className='Descripcion'>
-              <p>Descripcion Breve de cada Flujo</p>
+					<div className='Proyeccion'>
+             <Bar
+              data={DataUsersLost}
+              options={options}
+            />
           </div>
+					<div className='Proyeccion'>
+             <Bar
+              data={DataActiveUsers}
+              options={options}
+            />
+					</div>
         </div>
 
 

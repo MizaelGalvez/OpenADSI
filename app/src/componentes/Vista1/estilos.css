@@ -19,26 +19,6 @@
 /*
 //////////Datos y Descripcion//////////////////////////////////////////////////////////////////////
 */
-.Datos {
-  display: Flex;
-  margin-left: 15%;
-  align-items: center;
-  justify-content: space-around;
-}
-.Efectivos p {
-  display: inline-block;
-  background-color: #B3E5FCaa;
-  padding: 5px;
-  padding-right: 50px;
-  padding-left: 10px;
-}
-.Efectivos b {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-  margin-right: 0px;
-}
 .Gastos {
   background-color:  #B3E5FCaa;
   color: #d5f6ffff;
@@ -48,14 +28,4 @@
 }
 .Utilidad {
   background-color:  #B3E5FCaa;
-}
-
-.Descripcion {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    padding: 20px;
-    background-color:  #B3E5FCaa;
-    height: 100px;
-    width: 44%;
 }
