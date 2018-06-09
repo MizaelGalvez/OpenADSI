@@ -5,12 +5,9 @@
 .Vista1 div{
   display: inline-block;
   border-radius: 20px;
-  width: 35%;
-  margin: 20px;
-  padding: 30px;
-  padding-bottom: 15px;
-}
-.Dona {
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
 }
 .Proyeccion {
   background-color: #B3E5FCaa;
@@ -19,13 +16,3 @@
 /*
 //////////Datos y Descripcion//////////////////////////////////////////////////////////////////////
 */
-.Gastos {
-  background-color:  #B3E5FCaa;
-  color: #d5f6ffff;
-}
-.Nomina {
-  background-color:  #B3E5FCaa;
-}
-.Utilidad {
-  background-color:  #B3E5FCaa;
-}

@@ -4,33 +4,16 @@
 .Vista2 div{
   display: inline-block;
   border-radius: 20px;
-  width: 40%;
-  margin: 20px;
-  padding: 30px;
-  padding-bottom: 15px;
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
+}
+.Proyeccion {
+  background-color: #B3E5FCaa;
 }
 /*
 //////////Datos y Descripcion//////////////////////////////////////////////////////////////////////
 */
-.Capturar{
-}
-.Capturar p {
-  cursor: pointer;
-  background-color:  #B3E5FCaa;
-  padding: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.Capturar p:hover {
-  background-color: #74b90aff;
-}
-.Capturar b {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-  margin-right: 0px;
-}
 .Gastos {
   background-color: #a70954dd;
   color: #d5f6ffff;
@@ -40,23 +23,4 @@
 }
 .Utilidad {
   background-color: #74b90add;
-}
-.Rentabilidad {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  background-color:  #B3E5FCaa;
-  margin: 20px;
-  padding-right: 15%;
-}
-.Rentabilidad p {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px;
-  padding-right: 20px;
-}
-.Porcentaje p {
-  font-size: 38px;
-  font-weight: bold;
 }

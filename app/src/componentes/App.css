@@ -10,6 +10,10 @@ Body {
 //////////////////////// Cabecera /////////////////////////////////////////////////////////////////////////////
 */
 
+Contenido {
+  height: 300px;
+}
+
 .App-logo {
   position: absolute;
   left: 0;
@@ -55,6 +59,7 @@ Body {
   color: #E1F5FE;
   padding-bottom: 5px;
   position:absolute;
+  width: 100%;
   left:0;
   bottom:0;
   right:0;

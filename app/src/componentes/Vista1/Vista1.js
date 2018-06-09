@@ -41,8 +41,8 @@ const DataActiveUsers = {
   datasets: [{
       label: 'Proyeccion',
       type:'line',
-      data: [1600, 2000, 3600, 4400, 5000, 6000, 6800, 7300, 8465],
-      fill: false,
+      data: [13, 33, 55, 81, 115, 150, 186, 235, 306, 373, 453],
+      fill: true,
       borderWidth: 5,
       borderColor: '#74b90aee',
       backgroundColor: '#74b90aee',
@@ -67,40 +67,7 @@ const options = {
   },
 };
 
-const Multiple = {
-  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-  datasets: [{
-      label: 'Proyeccion',
-      type:'line',
-      data: [1600, 2000, 3600, 4400, 5000, 6000, 6800, 7300, 8465],
-      fill: false,
-      borderWidth: 5,
-      borderColor: '#999999ee',
-      backgroundColor: '#999999ee',
-      pointBorderColor: '#999999ee',
-      pointBackgroundColor: '#999999ff',
-      pointHoverBackgroundColor: '#999999ff',
-      pointHoverBorderColor: '#999999ff',
-    },{
-      type: 'bar',
-      label: 'Utilidad',
-      data: [1600, 2000, 3600, 4400, 5000, 6000],
-      fill: false,
-      backgroundColor: '#74b90aee',
-      borderColor: '#74b90aff',
-      hoverBackgroundColor: '#74b90aff',
-      hoverBorderColor: '#74b90aff',
-    },{
-      type: 'bar',
-      label: 'Comparacion',
-      data: [175, 200, 352, 543, 684, 784, 978, 968, 1134, 1354, 1454, 1598],
-      fill: false,
-      backgroundColor: '#ff760eee',
-      borderColor: '#ff760eee',
-      hoverBackgroundColor: '#ff760eff',
-      hoverBorderColor: '#ff760eff',
-    }]
-};
+
 
 
 class Vista1 extends Component {
@@ -117,14 +84,11 @@ class Vista1 extends Component {
               options={options}
             />
           </div>
-					<div className='Proyeccion'>
+					<div className='DatosUsuarios'>
 
-					<div className='Datos'>
-							<b className='Gastos'>2000</b><p>Gastos</p><br/>
-							<b className='Nomina'>6000</b><p>Nomina</p><br/>
-							<b className='Utilidad'>7000</b><p>Utilidad</p><br/>
-
-					</div>
+							<b >Activos</b><p>86</p><br/>
+							<b >Perdidos</b><p>-35</p><br/>
+							<b >Porcentaje Retencion</b><p>87%</p><br/>
 
           </div>
 					<div className='Proyeccion'>

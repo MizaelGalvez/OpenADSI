@@ -35,6 +35,41 @@ const dataUtilidad = {
     }]
 };
 
+const Multiple = {
+  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+  datasets: [{
+      label: 'Proyeccion',
+      type:'line',
+      data: [1600, 2000, 3600, 4400, 5000, 6000, 6800, 7300, 8465],
+      fill: false,
+      borderWidth: 5,
+      borderColor: '#999999ee',
+      backgroundColor: '#999999ee',
+      pointBorderColor: '#999999ee',
+      pointBackgroundColor: '#999999ff',
+      pointHoverBackgroundColor: '#999999ff',
+      pointHoverBorderColor: '#999999ff',
+    },{
+      type: 'bar',
+      label: 'Utilidad',
+      data: [1600, 2000, 3600, 4400, 5000, 6000],
+      fill: false,
+      backgroundColor: '#74b90aee',
+      borderColor: '#74b90aff',
+      hoverBackgroundColor: '#74b90aff',
+      hoverBorderColor: '#74b90aff',
+    },{
+      type: 'bar',
+      label: 'Comparacion',
+      data: [175, 200, 352, 543, 684, 784, 978, 968, 1134, 1354, 1454, 1598],
+      fill: false,
+      backgroundColor: '#ff760eee',
+      borderColor: '#ff760eee',
+      hoverBackgroundColor: '#ff760eff',
+      hoverBorderColor: '#ff760eff',
+    }]
+};
+
 const options = {
   scales: {
             xAxes: [{
@@ -58,6 +93,20 @@ const options = {
   },
 };
 
+const options2 = {
+  gridLines: {
+                offsetGridLines: true
+            },
+  legend: {
+    display: false,
+  },
+  elements: {
+    line: {
+      fill: false
+    }
+  },
+};
+
 
 
 class Vista2 extends Component {
@@ -73,18 +122,21 @@ class Vista2 extends Component {
               options={options}
             />
           </div>
-          <div className='Capturar'>
+          <div className='Proyeccion'>
+             <Bar
+              data={Multiple}
+              options={options2}
+            />
+          </div>
+          <div className='Proyeccion'>
             <b className='Gastos'>Gastos</b><input type="text" required placeholder="ingresa gasto"/><p>Registrar</p><br/>
             <b className='Utilidad'>Ventas</b><input type="text" required placeholder="ingresa Venta"/><p>Registrar</p><br/>
           </div>
-        </div>
-        <div className='Rentabilidad'>
-            <div>
-              <p>Rentabilidad:</p>
-            </div>
-            <div className='Porcentaje'>
-              <p>32%</p>
-            </div>
+          <div className='Proyeccion'>
+            <b className='Gastos'>Gastos</b><input type="text" required placeholder="ingresa gasto"/><p>Registrar</p><br/>
+            <b className='Utilidad'>Ventas</b><input type="text" required placeholder="ingresa Venta"/><p>Registrar</p><br/>
+          </div>
+
         </div>
 
 

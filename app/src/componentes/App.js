@@ -28,7 +28,7 @@ class App extends Component {
   cambiarVista1 = (event) => {
     Contenido = Vista1;
     this.setState({
-      Titulo: 'Proyeccion y Flujo de Efectivo',
+      Titulo: 'Estadisticas de Usuarios/Clientes',
     })
   }
   cambiarVista2 = (event) => {
@@ -69,11 +69,11 @@ class App extends Component {
           </div>
           <footer className="nav">
             <p className="botonNav" onClick={this.cambiarPrincipal}><i class="fas fa-home"></i><p>Mi Startup</p></p>
-            <p className="botonNav" onClick={this.cambiarVista1}><i class="far fa-money-bill-alt"></i><p>Flujos</p></p>
-            <p className="botonNav" onClick={this.cambiarVista2}><i class="fas fa-chart-bar"></i><p>Desgloce</p></p>
+            <p className="botonNav" onClick={this.cambiarVista1}><i class="fas fa-users"></i><p>Usuarios</p></p>
+            <p className="botonNav" onClick={this.cambiarVista2}><i class="fas fa-chart-bar"></i><p>Datoss</p></p>
             <p className="botonNav" onClick={this.cambiarVista5}><i class="far fa-address-card"></i><p>Agregar</p></p>
-            <p className="botonNav" onClick={this.cambiarVista3}><i class="far fa-calendar-alt"></i><p>Asistencias</p></p>
-            <p className="botonNav-end" onClick={this.cambiarVista4}><i class="far fa-hand-point-up"></i><p>Checador</p></p>
+            <p className="botonNav" onClick={this.cambiarVista3}><i class="far fa-calendar-alt"></i><p>Tareas</p></p>
+            <p className="botonNav-end" onClick={this.cambiarVista4}><i class="fas fa-code"></i><p>integrar</p></p>
           </footer>
       </div>
 
